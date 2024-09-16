@@ -1,0 +1,177 @@
+
+body.light {
+  background-color: #f0f4f8;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+body.dark {
+  background-color: #1e1e2d;
+  color: #f0f4f8;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+
+.book-card {
+  background-color:rgb(247, 180, 191);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-card h2 {
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.book-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.book-card button {
+  margin-top: 15px;
+  background-color: #28a745;
+  border: none;
+}
+
+.book-card button:hover {
+  background-color: #218838;
+}
+
+.book-detail {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.book-detail p {
+  margin: 10px 0;
+}
+
+
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  background-color: #007bff;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f4f8;
+  border-radius: 15px;
+}
+
+.filter select,
+.filter input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.filter button {
+  background-color: #007bff;
+}
+
+.filter button:hover {
+  background-color: #0056b3;
+}
